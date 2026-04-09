@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MovieBot — Chat</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="chat-app">
+    <header class="app-header">🎬 MovieBot</header>
+
+    <main id="chat" class="chat-window">
+      <!-- Messages will be added by JavaScript -->
+    </main>
+
+    <div id="quickActions" class="quick-actions">
+      <button data-text="Recommend popular movies">Popular</button>
+      <button data-text="Recommend top rated movies">Top rated</button>
+      <button data-text="Recommend action movies">Action</button>
+      <button data-text="Recommend sci-fi movies">Sci-Fi</button>
+      <button data-text="Recommend romance movies">Romance</button>
+      <button data-text="Recommend comedy movies">Comedy</button>
+    </div>
+
+    <form id="inputForm" class="input-area">
+      <input id="userInput" autocomplete="off" placeholder="E.g., 'Recommend sci-fi movies'" />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="/static/main.js"></script>
+</body>
+</html>
